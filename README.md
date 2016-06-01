@@ -23,6 +23,7 @@ http://localhost:3000
 
 
 
-
+参考：
+1.http://www.keyunq.com/front/babel-sublime.html
 
 
