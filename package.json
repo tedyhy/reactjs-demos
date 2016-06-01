@@ -1,0 +1,14 @@
+{
+  "name": "reactjs-demos",
+  "description": "Frontend engineering solution based on webpack.",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "licence": "MIT",
+  "devDependencies": {
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {}
+}
