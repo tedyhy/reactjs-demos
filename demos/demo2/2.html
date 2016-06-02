@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="../lib/react/15.1.0/react.min.js"></script>
+    <script src="../lib/react/15.1.0/react-dom.min.js"></script>
+    <script src="../lib/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script src="js/2.js" type="text/babel"></script>
+    <script type="text/babel"></script>
+
+
+
+    <!--
+      props 是不可变的：它们从父组件传递过来，“属于”父组件。为了实现交互，我们给组件引入了可变的 state 。
+      this.state 是组件私有的，可以通过调用 this.setState() 来改变它。当 state 更新之后，组件就会重新渲染自己。
+
+      render() 方法依赖于 this.props 和 this.state ，框架会确保渲染出来的 UI 界面总是与输入（ this.props 和 this.state ）保持一致。
+
+
+
+    -->
+  </body>
+</html>
