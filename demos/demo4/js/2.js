@@ -24,7 +24,8 @@ var ProductRow = React.createClass({
 			</span>
 		return (
 			<tr>
-				<td>{name}</td><td>{this.props.product.price}</td>
+				<td>{name}</td>
+				<td>{this.props.product.price}</td>
 			</tr>
 		)
 	}
@@ -35,12 +36,15 @@ var ProductTable = React.createClass({
 		var rows = [];
 		var lastCategory = null;
 		this.props.products.forEach(function(product){
+			if (product.name.indexOf(this.props.filterText) === -1 || 
+				(!product.stocked && this.props.inStockOnly)) return;
+
 			if (product.category !== lastCategory) {
 				rows.push(<ProductCategoryRow category={product.category} />)
 			}
 			rows.push(<ProductRow product={product} />)
 			lastCategory = product.category
-		})
+		}.bind(this))
 
 		return (
 			<table>
@@ -57,12 +61,28 @@ var ProductTable = React.createClass({
 })
 
 var SearchBar = React.createClass({
+	handleChange: function(){
+		this.props.handleUserInput(
+			this.refs.filterTextInput.value,
+			this.refs.inStockOnlyInput.checked
+		)
+	},
 	render: function(){
 		return (
 			<form>
-				<input type="text" placeholder="Search..." />
+				<input
+					type="text"
+					placeholder="Search..."
+					value={this.props.filterText}
+					ref="filterTextInput"
+					onChange={this.handleChange}/>
 				<p>
-					<input type="checkbox" /> Only show products in stock
+					<input
+						type="checkbox"
+						checked={this.props.inStockOnly}
+						ref="inStockOnlyInput"
+						onChange={this.handleChange}
+					/> Only show products in stock
 				</p>
 			</form>
 		)
@@ -70,11 +90,29 @@ var SearchBar = React.createClass({
 })
 
 var FilterableProductTable = React.createClass({
+	handleUserInput: function(filterText, inStockOnly){
+		this.setState({
+			filterText: filterText,
+			inStockOnly: inStockOnly
+		})
+	},
+	getInitialState: function(){
+		return {filterText: "", inStockOnly: false}
+	},
 	render: function(){
 		return (
 			<div>
-				<SearchBar />
-				<ProductTable products={this.props.products} />
+				<SearchBar
+					filterText={this.state.filterText}
+					inStockOnly={this.state.inStockOnly}
+					handleUserInput={this.handleUserInput}
+				/>
+				<ProductTable
+					products={this.props.products}
+					filterText={this.state.filterText}
+					inStockOnly={this.state.inStockOnly}
+					handleUserInput={this.handleUserInput}
+				/>
 			</div>
 		)
 	}
