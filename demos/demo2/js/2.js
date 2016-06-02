@@ -71,7 +71,7 @@ var Comment = React.createClass({
 })
 
 ReactDOM.render(
-	<CommentBox url="/api/comments" pollInterval={3e3} />,
+	<CommentBox url="/apis/comments" pollInterval={3e3} />,
 	document.getElementById('content')
 );
 

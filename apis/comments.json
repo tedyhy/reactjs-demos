@@ -1,57 +1,49 @@
-[
-    {
-        "id": 1388534400000,
-        "author": "Pete Hunt",
-        "text": "Hey there!"
-    },
-    {
-        "id": 1420070400000,
-        "author": "Paul O’Shannessy",
-        "text": "React is *great*!"
-    },
-    {
-        "id": 1464834870091,
-        "author": "1212",
-        "text": "1212"
-    },
-    {
-        "id": 1464834890685,
-        "author": "222",
-        "text": "2323"
-    },
-    {
-        "id": 1464834901319,
-        "author": "sfsdfsdf",
-        "text": "*adfasdfasdf*"
-    },
-    {
-        "id": 1464834948460,
-        "author": "qqqqqqqq",
-        "text": "##qqqqqqqqq"
-    },
-    {
-        "id": 1464834960146,
-        "author": "rrrrrrr",
-        "text": "#rrrrrrrrrr#"
-    },
-    {
-        "id": 1464834975412,
-        "author": "fadfasdf",
-        "text": "#sdfadsf"
-    },
-    {
-        "id": 1464835013165,
-        "author": "aaaaaaaaaaaaa",
-        "text": "aaaaaaaaaaaaaa"
-    },
-    {
-        "id": 1464835393571,
-        "author": "sadfsdf",
-        "text": "asdfasdf"
-    },
-    {
-        "id": 1464835393599,
-        "author": "ttttttttttttttttt",
-        "text": "tttttttttttttttttt"
-    }
-]
+[{
+    "id": 1388534400000,
+    "author": "Pete Hunt",
+    "text": "Hey there!"
+}, {
+    "id": 1420070400000,
+    "author": "Paul O’Shannessy",
+    "text": "React is *great*!"
+}, {
+    "id": 1464834870091,
+    "author": "1212",
+    "text": "1212"
+}, {
+    "id": 1464834890685,
+    "author": "222",
+    "text": "2323"
+}, {
+    "id": 1464834901319,
+    "author": "sfsdfsdf",
+    "text": "*adfasdfasdf*"
+}, {
+    "id": 1464834948460,
+    "author": "qqqqqqqq",
+    "text": "##qqqqqqqqq"
+}, {
+    "id": 1464834960146,
+    "author": "rrrrrrr",
+    "text": "#rrrrrrrrrr#"
+}, {
+    "id": 1464834975412,
+    "author": "fadfasdf",
+    "text": "#sdfadsf"
+}, {
+    "id": 1464835013165,
+    "author": "aaaaaaaaaaaaa",
+    "text": "aaaaaaaaaaaaaa"
+}, {
+    "id": 1464835393571,
+    "author": "sadfsdf",
+    "text": "asdfasdf"
+}, {
+    "id": 1464835393599,
+    "author": "ttttttttttttttttt",
+    "text": "tttttttttttttttttt"
+}, {
+    "id": 1464844866632,
+    "author": "qeqwe",
+    "text": "qweqwe"
+}]
