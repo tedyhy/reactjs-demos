@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="../lib/react/15.1.0/react.min.js"></script>
+    <script src="../lib/react/15.1.0/react-dom.min.js"></script>
+    <script src="../lib/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script src="js/2.js" type="text/babel"></script>
+    <script type="text/babel"></script>
+
+
+
+    <!--
+      为了正确构建应用，首先需要考虑应用需要的最小的可变 state 数据模型集合。此处关键点在于精简：不要存储重复的数据。构造出绝对最小的满足应用需要的最小 state 是有必要的，并且计算出其它强烈需要的东西。例如，如果构建一个 TODO 列表，仅保存一个 TODO 列表项的数组，而不要保存另外一个指代数组长度的 state 变量。当想要渲染 TODO 列表项总数的时候，简单地取出 TODO 列表项数组的长度就可以了。
+      
+      思考示例应用中的所有数据片段，有：
+        1.最初的 products 列表
+        2.用户输入的搜索文本
+        3.复选框的值
+        4.过滤后的 products 列表
+
+      让我们分析每一项，指出哪一个是 state 。简单地对每一项数据提出三个问题：
+        1)是否是从父级通过 props 传入的？如果是，可能不是 state 。
+        2)是否会随着时间改变？如果不是，可能不是 state 。
+        3)能根据组件中其它 state 数据或者 props 计算出来吗？如果是，就不是 state 。
+
+      初始的 products 列表通过 props 传入，所以不是 state 。搜索文本和复选框看起来像是 state ，因为它们随着时间改变，也不能根据其它数据计算出来。最后，过滤的 products 列表不是 state ，因为可以通过搜索文本和复选框的值从初始的 products 列表计算出来。
+      所以最终， state 是：
+        1.用户输入的搜索文本
+        2.复选框的值
+    -->
+  </body>
+</html>

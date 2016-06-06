@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="../lib/react/15.1.0/react.min.js"></script>
+    <script src="../lib/react/15.1.0/react-dom.min.js"></script>
+    <script src="../lib/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script src="js/1.js" type="text/babel"></script>
+    <script type="text/babel"></script>
+
+
+
+    <!--
+      单一功能原则，指的是，理想状态下一个组件应该只做一件事，假如它功能逐渐变大就需要被拆分成更小的子组件。
+
+      FilterableProductTable
+        SearchBar
+        ProductTable
+          ProductCategoryRow
+          ProductRow
+
+      为了创建一个渲染数据模型的应用的静态版本，你将会构造一些组件，这些组件重用其它组件，并且通过 props 传递数据。 props 是一种从父级向子级传递数据的方式。如果你对 state 概念熟悉，那么 不要使用 state 来构建这个静态版本。 state 仅用于实现交互功能，也就是说，数据随着时间变化。因为这是一个静态的应用版本，所以你并不需要 state 。
+    -->
+  </body>
+</html>
